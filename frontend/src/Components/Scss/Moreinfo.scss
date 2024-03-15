@@ -1,0 +1,100 @@
+.M_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .view_container {
+    background: rgb(50, 66, 80);
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1rem;
+
+    .img_and_features1 {
+      .img_area {
+        width: 100%;
+        border-radius: 1px;
+        padding: 0.5rem;
+        height: 30rem;
+        background: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .toggles_btn {
+          font-size: 1.7rem;
+          padding: 0.2rem;
+          height: 1.5rem;
+          margin-top: 0.2rem;
+          background: transparent;
+          outline: none;
+          border: none;
+          @extend .toggle;
+          cursor: pointer;
+
+          .uil {
+            color: rgb(156, 228, 234);
+          }
+        }
+      }
+      .book_btndiv {
+        margin-top: 2rem;
+
+        @extend .toggle;
+        justify-content: space-evenly;
+
+        .book_now {
+          width: 40%;
+          height: 3rem;
+          border: none;
+          border-radius: 10px;
+          font-size: 1.1rem;
+          font-weight: 600;
+
+        }
+        .book_now:hover {
+          background: rgba(5, 155, 169, 0.777);
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .img_and_features2 {
+      padding: 0.5rem;
+
+      .address_info {
+        padding: 0.5rem;
+
+        h3 {
+          color: cyan;
+        }
+      }
+      .price_infodiv {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+
+        .price_info {
+          padding: 0.5rem;
+
+          label {
+            font-size: 1.2rem;
+            color: cyan;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 606px) {
+  .M_container {
+    height: 100vh;
+  }
+}

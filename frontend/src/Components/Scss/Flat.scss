@@ -1,0 +1,44 @@
+.flat_div {
+  position: static;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+}
+.image_flat {
+  width: 60%;
+  height: 50rem;
+  margin-top: 4rem;
+  background-image: url("https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/flat5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text_flat_div {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-left: 67%;
+  margin-top: -5rem;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.flat_text {
+  width: 50%;
+}
+#flat_btn {
+  width: 45%;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  background: rgb(3, 147, 147);
+}
+#flat_btn:hover{
+  background: rgb(2, 215, 215);
+  cursor: pointer;
+}

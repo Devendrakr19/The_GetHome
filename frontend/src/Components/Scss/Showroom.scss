@@ -1,0 +1,82 @@
+.room_div {
+  position: static;
+  width: 100%;
+  margin-top: 5rem;
+  height: 25rem;
+  background: rgb(69, 86, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.room_img {
+  width: 40%;
+  height: 25rem;
+  background: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.room_details {
+  background: rgba(5, 5, 5, 0.704);
+  border-bottom: 1px solid wheat;
+  border-top: 1px solid wheat;
+  color: rgb(230, 228, 227);
+  width: 60%;
+  height: 25rem;
+}
+
+.room_div1 {
+  width: 100%;
+  height: 25rem;
+  background: rgb(69, 86, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid rgb(4, 255, 0);
+}
+.room_img2 {
+  background: url("");
+  width: 40%;
+  height: 25rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.room_img3 {
+  width: 40%;
+  height: 25rem;
+  background: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.address {
+  width: 100%;
+  height: 12.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.address_content {
+  width: 93%;
+}
+span {
+  color: rgba(224, 228, 228, 0.86);
+  text-decoration: none;
+}
+.price_div {
+  @extend .address;
+}
+.price {
+  width: 60%;
+}
+.more_info {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.moreinfo_text {
+  color: rgba(116, 213, 5, 0.799);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}

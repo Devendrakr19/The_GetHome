@@ -1,0 +1,66 @@
+.footerdescription {
+  position: static;
+  width: 100%;
+  height: 47rem;
+  padding: 3rem;
+  display: flex;
+}
+.footersdescription1 {
+  width: 25%;
+}
+.flat_ul {
+  width: 100%;
+}
+.flat_li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.pg_ul {
+  width: 100%;
+}
+.pg_li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.hostel_ul {
+  width: 100%;
+}
+.hostel_li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.lodge_ul {
+  width: 100%;
+}
+
+.lodge_li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.Allroom_Name_heading {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-weight: 600;
+  color: black;
+}
+.footer_end {
+  width: 100%;
+  height: 3.5rem;
+  background: rgb(73, 7, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#ftr_end {
+  font-size: 1rem;
+  font-weight: 600;
+}

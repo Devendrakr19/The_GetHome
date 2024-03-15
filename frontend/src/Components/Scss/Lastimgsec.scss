@@ -1,0 +1,34 @@
+.lastimg_area {
+  width: 100%;
+  margin-top: 5rem;
+}
+.lastimg {
+  width: 100%;
+  height: 70rem;
+  background-image: url("https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/home4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top 90%;
+  background-attachment: fixed;
+}
+.lasttext_div {
+  width: 100%;
+  height: 70rem;
+  background: rgba(0, 0, 0, 0.571);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last_text {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#quote {
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(45deg,rgb(253, 251, 251),rgb(3, 249, 130),rgb(250, 250, 237));
+  color:transparent;
+}

@@ -1,0 +1,53 @@
+.footer_area {
+  position: static;
+  width: 100%;
+  background: #ffffff;
+  margin-top: -6rem;
+}
+svg {
+  margin-top: -8.5rem;
+}
+.home3d_div {
+  position: static;
+  width: 100%;
+  padding: 3rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img3d_div {
+  width: 70%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+}
+#img3d {
+  width: 70%;
+  height: 50rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+.text_div {
+  width: 30%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+}
+.text {
+  text-align: center;
+  width: 50%;
+  height: 25rem;
+}
+#footertextimg {
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+#playstoretext {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+

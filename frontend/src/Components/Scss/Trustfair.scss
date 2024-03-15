@@ -1,0 +1,46 @@
+dislay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  position: relative;
+  // margin-top: 10rem;
+  height: 15rem;
+  @extend dislay;
+}
+.info {
+  width: 33.33%;
+  height: 15rem;
+  color: white;
+  padding: 0.5rem;
+  @extend dislay;
+}
+#info_first {
+  background-image: linear-gradient(45deg, rgb(55, 70, 70), rgb(59, 81, 78));
+}
+.info_first_child {
+  width: 65%;
+  text-align: center;
+}
+#info_h2 {
+  font-size: 3rem;
+}
+#info1text {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+#info_second {
+  background: rgb(46, 45, 45);
+}
+.info_second_child {
+  width: 50%;
+  text-align: center;
+}
+#info_third {
+  background-image: linear-gradient(45deg, rgb(55, 70, 70), rgb(59, 81, 78));
+}
+.info_third_child {
+  width: 50%;
+  text-align: center;
+}

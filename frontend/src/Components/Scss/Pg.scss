@@ -1,0 +1,44 @@
+.pg_div {
+  width: 100%;
+  padding: 3rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.pgimg_div {
+  width: 60%;
+  height: 50rem;
+  background-image: url("https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/pg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 5rem;
+}
+.pg_text_div {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-left: -66.6%;
+  margin-top: -6rem;
+  height: 62rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.pg_text {
+  width: 50%;
+}
+#pg_btn {
+  width: 45%;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  background: cyan;
+}
+#pg_btn:hover{
+ cursor: pointer;
+  background: rgb(2, 135, 135);
+}

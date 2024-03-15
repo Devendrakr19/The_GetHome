@@ -1,0 +1,139 @@
+.wrapper {
+  background-color: rgb(64, 63, 63);
+  position: absolute;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 1px solid red;
+  flex-direction: column;
+}
+.flat_wrapper {
+  background-color: rgb(64, 63, 63);
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.select-area {
+  display: grid;
+  width: 100%;
+  color: black;
+  grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+  gap: 0.4rem;
+  padding: 0.3rem;
+  border: 1px solid rgb(0, 255, 55);
+}
+.select {
+  grid-template-columns: repeat(auto-fit, minmax(0px, auto));
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+@media (max-width: 400px) {
+  .select {
+    font-size: 1rem;
+  }
+}
+#flatlink {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+#flatlink:hover {
+  color: cyan;
+}
+
+.Home-details-area {
+  position: static;
+  width: 100%;
+  // height: 6rem;
+  margin-top: 1.5rem;
+
+  .payment-home-details {
+    width: 100%;
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    text-align: center;
+
+    .details-heading {
+      font-size: 1rem;
+      color: rgb(251, 239, 3);
+    }
+    @media (max-width: 580px) {
+      .details-heading {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  .payment-details {
+    width: 100%;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1rem;
+
+    .details {
+      // width: 8%;
+      height: 2rem;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 1.2rem;
+      // border: 1px solid red;
+    }
+
+    #bhk {
+      background: none;
+      font-size: 1.2rem;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #pay {
+      cursor: pointer;
+    }
+  }
+}
+.edit-area {
+  width: 20%;
+  // border: 1px solid red;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .edit-save {
+    width: 40%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background: rgb(249, 122, 122);
+    cursor: pointer;
+  }
+  .edit-save:hover {
+    background: rgb(209, 84, 84);
+  }
+}
+@media (max-width: 580px) {
+  .edit-area {
+    width: 50%;
+  }
+}
+@media (max-width: 310px) {
+  .wrapper {
+    width: 120%;
+  }
+}
