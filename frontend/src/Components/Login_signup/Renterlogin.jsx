@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Scss/Renterlogin.scss";
+import "../Login_signup/Renterlogin.scss";
 import { Link } from "react-router-dom";
 
 export default function Renterlogin() {

@@ -2,9 +2,11 @@ import "./App.css";
 import Home from "./Components/Home";
 import { Route, Routes } from "react-router-dom";
 import Searchroom from "./Components/Searchroom";
-import Loginpage from "./Components/Loginpage";
-import Rentersignup from "./Components/Rentersignup";
-import Landlordsignup from "./Components/Landlordsignup";
+import Loginpage from "./Components/Login_signup/Loginpage";
+import Renterlogin from "./Components/Login_signup/Renterlogin";
+import Landlordlogin from "./Components/Login_signup/Landlordlogin";
+import Rentersignup from "./Components/Login_signup/Rentersignup";
+import Landlordsignup from "./Components/Login_signup/Landlordsignup";
 import LandlordHome from "./Components/Landlord/LandlordHome";
 import LandlordFlatDetails from "./Components/Landlord/LandlordFlatDetails";
 import LandlordPg from "./Components/Landlord/LandlordPg";
@@ -17,8 +19,7 @@ import RenterHome from "./Components/RenterHome";
 import Contact from "./Components/Contact";
 import Help from "./Components/Help";
 import Fileupload from "./Components/Fileupload";
-import Renterlogin from "./Components/Renterlogin";
-import Landlordlogin from "./Components/Landlordlogin";
+ 
 
 function App() {
   return (

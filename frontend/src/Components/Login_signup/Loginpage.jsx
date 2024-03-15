@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Scss/Loginpage.scss";
+import "../Login_signup/Loginpage.scss";
 import { Link, Outlet } from "react-router-dom";
 
 export default function Loginpage() {

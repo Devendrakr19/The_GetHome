@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./Scss/Rentersignup.scss";
+// import "./Scss/Rentersignup.scss";
 
 import { Link, useNavigate } from "react-router-dom";
 
@@ -102,7 +102,7 @@ function Rentersignup() {
               </label>
               <div className="male_div">
                 <label htmlFor="male" className="male">
-                  Male 
+                  Male
                 </label>
                 <input
                   type="radio"
