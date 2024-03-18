@@ -1,5 +1,6 @@
 import LandlordFlatAddress from "./LandlordFlatAddress";
-import "../Scss/LandlordFlatDetails.scss";
+import "../Landlord/LandlordFlatDetails.scss";
+
 function LandlordPg() {
   return (
     <>

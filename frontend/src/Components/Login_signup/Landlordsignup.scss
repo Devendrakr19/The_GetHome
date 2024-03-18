@@ -1,0 +1,103 @@
+#Landlord_form {
+  width: 100%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.387);
+  height: 38rem;
+  border-radius: 10px;
+  color: rgb(226, 227, 230);
+
+  .Landlord_col1 {
+    width: 55%;
+
+    img {
+      width: 100%;
+      height: 38rem;
+      border-radius: 10px 0px 0px 10px;
+    }
+  }
+  .Landlord_col2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Landlord_content {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h1 {
+        text-align: center;
+        margin-top: 0.5rem;
+      }
+      .Landlord_email_div {
+        width: 100%;
+        margin-top: 0rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 0.5rem;
+
+        label {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        input {
+          width: 100%;
+          height: 2.5rem;
+          outline: none;
+          border-radius: 5px;
+          border: none;
+          margin-top: 0.5rem;
+          padding: 0.5rem;
+        }
+      }
+
+      .Landlord_username_div {
+        @extend .Landlord_email_div;
+      }
+
+      .Landlord_mobile_div {
+        @extend .Landlord_email_div;
+      }
+
+      .Landlord_password_div {
+        @extend .Landlord_email_div;
+      }
+
+      .Landlord_div {
+        width: 50%;
+        height: 2.5rem;
+        border: none;
+        border-radius: 5px;
+        margin-top: 1rem;
+        transition: 0.3s;
+        cursor: pointer;
+
+        #Landlord_link {
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+      .Landlord_div:hover {
+        background: rgba(3, 88, 3, 0.75);
+
+        #Landlord_link {
+          color: white;
+        }
+      }
+
+      p {
+        margin-top: 0.6rem;
+
+        #Landlord_login_link {
+          color: blue;
+        }
+      }
+    }
+  }
+}

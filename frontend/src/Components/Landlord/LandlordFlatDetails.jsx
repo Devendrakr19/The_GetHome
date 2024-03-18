@@ -1,4 +1,4 @@
-import "../Scss/LandlordFlatDetails.scss";
+import "../Landlord/LandlordFlatDetails.scss";
 import LandlordNavbar from "./LandlordNavbar";
 import Homeroute from "./Homeroute";
 

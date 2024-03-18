@@ -1,0 +1,53 @@
+.SignupPage_conatiner {
+  width: 100%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(86rem, 1fr));
+  flex-direction: column;
+
+  .SignupPage_wrapper {
+    width: 100%;
+    background: rgba(6, 67, 105, 0.694);
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .SignupPage_link_div {
+      display: flex;
+      justify-content: space-around;
+      width: 40%;
+      border-radius: 15px 15px;
+      margin-top: 4rem;
+      //   border: 1px solid red;
+
+      button {
+        width: 40%;
+        height: 2.5rem;
+        outline: none;
+        border: none;
+        border-radius: 5px 5px 0px 0px;
+        background: rgba(0, 0, 0, 0.375);
+      }
+
+      #SignupPage_renterlink {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 600;
+      }
+      #SignupPage_landlirdlink {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+    .SignupPage_outlet {
+      width: 75%;
+      margin-bottom: 6rem;
+    }
+  }
+}

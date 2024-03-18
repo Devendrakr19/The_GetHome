@@ -1,179 +1,95 @@
 import { useState } from "react";
+import "../Login_signup/Rentersignup.scss";
+import { Link } from "react-router-dom";
 
-// import "./Scss/Rentersignup.scss";
+export default function Rentersignup() {
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [password, setPassword] = useState("");
+  const [cpassword, setCpassword] = useState("");
+  const [name, setName] = useState("");
 
-import { Link, useNavigate } from "react-router-dom";
-
-function Rentersignup() {
-  const Navigate = useNavigate();
-
-  const [form, setform] = useState({});
-
-  function input(e) {
-    setform({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  }
-
-  const Submit = async (e) => {
+  const submitHandle = (e) => {
     e.preventDefault();
-
-    const response = await fetch("http://localhost/Home/Signup", {
-      method: "POST",
-      body: JSON.stringify(form),
-
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    const json = await response.json();
-    console.log(json.emailpassword);
-    if (json.emailpassword) {
-      console.log("see");
-      localStorage.setItem("userEmail", json.userEmail);
-      Navigate("/");
-    }
-
-    if (json.passwordfalls) {
-      alert("password does not match with conform password");
-    }
-    if (json.emailexist) {
-      alert("this is email is alreay exist");
-    }
   };
+
   return (
     <>
-      <div className="signup_container">
-        <form className="form" onSubmit={Submit}>
-          <div className="register">
-            <div className="signup_info">
-              <h1 id="Info">Signup</h1>
-            </div>
-            <div className="signup_name">
-              <label htmlFor="Name" className="fullname">
-                Full Name:
-              </label>
-              <br />
+      <form action="" onSubmit={submitHandle} id="Rentersignup_form">
+        <div className="Rentersignup_col1">
+          <img
+            src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/home.png"
+            alt=""
+          />
+        </div>
+        <div className="Rentersignup_col2">
+          <div className="Rentersignup_content">
+            <h1>Renter Signup</h1>
+            <div className="Rentersignup_username_div">
+              <label htmlFor="username">Fullname</label>
               <input
                 type="text"
-                placeholder="Enter your full name"
-                className="renter_signup_input"
-                onChange={input}
-                name="fullName"
+                placeholder="Enter your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
               />
-              <br />
-              <span></span>
             </div>
-            <div className="signup_email">
-              <label htmlFor="email" className="email">
-                Email id:
-              </label>
-              <br />
+            <div className="Rentersignup_email_div">
+              <label htmlFor="email">Email</label>
               <input
                 type="email"
-                placeholder="Enter your email id"
-                className="renter_signup_input"
-                onChange={input}
-                name="email"
+                placeholder="Enter email id"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
               />
-              <br />
-              <span></span>
             </div>
-            <div className="signup_phone">
-              <label htmlFor="phone" className="phone">
-                Phone no.:
-              </label>
-              <br />
+            <div className="Rentersignup_mobile_div">
+              <label htmlFor="mobile">Mobile no.</label>
               <input
                 type="tel"
-                placeholder="+91"
-                className="renter_signup_input"
-                onChange={input}
-                name="phone"
+                placeholder="Enter your mobile no."
+                value={mobile}
+                onChange={(e) => setMobile(e.target.value)}
+                required
               />
-              <br />
-              <span></span>
             </div>
-            <div className="signup_gender">
-              <label htmlFor="gender" className="gender">
-                Gender:
-              </label>
-              <div className="male_div">
-                <label htmlFor="male" className="male">
-                  Male
-                </label>
-                <input
-                  type="radio"
-                  className="radio_input"
-                  onChange={input}
-                  // name="gender"
-                />
-              </div>
-              <div className="female_div">
-                <label htmlFor="female" className="female">
-                  Female
-                </label>
-                <input
-                  type="radio"
-                  className="radio_input"
-                  onChange={input}
-                  // name="gender"
-                />
-              </div>
-              <div className="other_div">
-                <label htmlFor="other" className="other">
-                  Other
-                </label>
-                <input
-                  type="radio"
-                  className="radio_input"
-                  onChange={input}
-                  // name="gender"
-                />
-              </div>
-            </div>
-            <div className="signup_setpswd">
-              <label htmlFor="setpassword" className="setpassword">
-                Set password:
-              </label>
-              <br />
+
+            <div className="Rentersignup_password_div">
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
                 placeholder="********"
-                className="renter_signup_input"
-                onChange={input}
-                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.currentTarget.value)}
+                required
               />
-              <br />
-              <span></span>
             </div>
-            <div className="signup_cnfrmpswd">
-              <label htmlFor="cnfrmpassword" className="cnfrmpassword">
-                Confirm password:
-              </label>
-              <br />
+            <div className="Rentersignup_password_div">
+              <label htmlFor="confirm_password">Confirm Password</label>
               <input
                 type="password"
                 placeholder="********"
-                className="renter_signup_input"
-                onChange={input}
-                name="confirmPassword"
+                value={cpassword}
+                onChange={(e) => setCpassword(e.currentTarget.value)}
+                required
               />
-              <br />
-              <span></span>
             </div>
-            <div className="signup_btn_div">
-              <button type="submit" id="signup_btn">
-                submit
-              </button>
-            </div>
+            <button className="Rentersignup_div" type="submit">
+              <Link to="/ " id="Rentersignup_link">
+                Submit
+              </Link>
+            </button>
+            <p>
+              Already have an account?{" "}
+              <Link to="/ " id="Rentersignup_login_link">
+                Login
+              </Link>
+            </p>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </>
   );
 }
-
-export default Rentersignup;

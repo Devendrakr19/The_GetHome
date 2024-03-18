@@ -14,13 +14,24 @@ export default function Footerimg() {
       <div className="footer_area">
         <div className="home3d_div">
           <div className="img3d_div">
-            <img src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/mobilemap2.jpg" alt="" id="img3d" />
+            <img
+              src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/mobilemap2.jpg"
+              alt=""
+              id="img3d"
+            />
           </div>
-          <div className="text_div">
+          <div className="Ftext_div">
             <div className="text">
-              <img src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/homelogo3.png" alt="" id="footertextimg" />
-              <p id="playstoretext">Download the GetHome app to apply!</p>
-              <img src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/google-play+(1).jpg" alt="" id="footertextimg" />
+              <img
+                src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/homelogo3.png"
+                alt=""
+                id="footertextimg"
+              />
+              <img
+                src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/google-play+(1).jpg"
+                alt=""
+                id="footertextimg2"
+              />
             </div>
           </div>
         </div>

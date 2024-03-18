@@ -1,8 +1,7 @@
 .contact_container {
   position: absolute;
-  background: url("");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgba(9, 93, 145, 0.694);
+  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -13,92 +12,88 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  h1 {
-    margin-top: 2rem;
-    text-shadow: 4px 1px 2px rgb(239, 44, 44);
-  }
 
-  .contact_info {
-    margin-top: 3rem;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    display: grid;
-    margin-bottom: 3rem;
-    //   border: 1px solid red;
-    gap: 2rem;
-    padding: 1rem;
-  }
-  .img_text1 {
-    width: 100%;
-    height: 15rem;
-    background: url("./images/rk.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.546);
+    h1 {
+      margin-top: 2rem;
+      color: black;
+      text-shadow: 4px 1px 2px rgb(44, 177, 239);
+    }
 
-    .infos {
-      background: rgba(36, 35, 35, 0.682);
-      width: 100%;
-      height: 3rem;
-      margin-top: 12rem;
-      border-radius: 5px 5px 0px 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      cursor: pointer;
-      transition: all ease 0.6s;
-      font-size: 0.9rem;
+    .contact_info {
+      margin-top: 3rem;
+      width: 60%;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      display: grid;
+      margin-bottom: 3rem;
+      // border: 1px solid red;
+      gap: 2rem;
+      padding: 1rem;
 
-      span {
-        color: cyan;
+      .img_text1 {
+        width: 100%;
+        height: 22rem;
+        background: url("./images/rk.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.546);
+
+        .infos {
+          background: rgba(36, 35, 35, 0.682);
+          width: 100%;
+          height: 3rem;
+          margin-top: 17rem;
+          border-radius: 5px 5px 0px 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          cursor: pointer;
+          transition: all ease 0.6s;
+          font-size: 0.9rem;
+          // border: 1px solid red;
+
+          p {
+            font-size: 1.2rem;
+            display: none;
+            transition: all ease 0.9s;
+            color: black;
+            text-align: center;
+
+            span {
+              color: white;
+            }
+          }
+        }
+        .name {
+          cursor: pointer;
+          color: rgb(246, 239, 239);
+          border-radius: 0px 0px 5px 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          height: 2rem;
+        }
+        .infos:hover {
+          height: 10rem;
+          margin-top: 10rem;
+
+          p {
+            display: block;
+          }
+        }
       }
-      p {
-        display: none;
-        transition: all ease 0.9s;
+
+      .img_text2 {
+        @extend .img_text1;
+        background: url("https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/Devendra_img.jpg");
       }
     }
-    .name {
-      box-shadow: 0px 0px 8px 0px;
-      cursor: pointer;
-      color: cyan;
-      border-radius: 0px 0px 5px 5px;
-      text-align: center;
-    }
-    .infos:hover {
-      margin-top: 5rem;
-      height: 10rem;
-
-      p {
-        display: block;
+    @media (min-width: 1360px) {
+      .contact_container {
+        height: 100vh;
       }
     }
-  }
-  .img_text2 {
-    @extend .img_text1;
-    background: transparent;
-  }
-  .img_text3 {
-    @extend .img_text1;
-    background: url("");
-    background-size: cover;
-  }
-
-  .img_text4 {
-    @extend .img_text1;
-    background: url("");
-    background-size: cover;
-  }
-
-  .img_text5 {
-    @extend .img_text1;
-    background: transparent;
-  }
-}
-@media (min-width: 1360px) {
-  .contact_container {
-    height: 100vh;
   }
 }

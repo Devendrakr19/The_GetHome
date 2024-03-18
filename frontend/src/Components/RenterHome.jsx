@@ -15,7 +15,6 @@ function RenterHome() {
     <>
       <div className="renter_container">
         <Textonvideo />
-        {/* <video src="homevideo3.mp4" autoPlay loop muted></video> */}
         <Trustfair />
         <Map />
         <Flat />

@@ -88,7 +88,7 @@ export default function Footerend() {
       </div>
       <div className="footer_end">
         <p id="ftr_end">
-          © 2023 by Devendra | Rohit | Anuradha | Terms of Use | Privacy Policy
+          © 2023 by Devendra | Rohit |Terms of Use | Privacy Policy
         </p>
       </div>
     </>

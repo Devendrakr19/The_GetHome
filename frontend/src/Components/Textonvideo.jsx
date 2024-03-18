@@ -34,7 +34,7 @@ export default function Textonvideo() {
             </span>{" "}
           </p>
           <button id="signUp_btn">
-            <Link to="/" id="link">
+            <Link to="/signuppage/rentersignup" id="link">
               Sign up
             </Link>
           </button>

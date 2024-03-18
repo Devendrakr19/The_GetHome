@@ -8,16 +8,15 @@ function Contact() {
           <div className="contact_info">
             <div className="img_text1">
               <div className="infos">
-                <h3>Fullstack Developer</h3>
-                <br />
+                <h2>Fullstack Developer</h2>
                 <p>
-                  <span>Email:</span>rohit123@gmail.com
+                  Email:<span> rohit123@gmail.com</span>
                 </p>
                 <p>
-                  <span>contact no.:</span> 9101776040
+                  contact no: <span> 9101776040</span>
                 </p>
                 <p>
-                  <span>Instagram:</span> not now!
+                  Instagram: <span>not now! </span>
                 </p>
               </div>
               <div className="name">
@@ -27,74 +26,19 @@ function Contact() {
 
             <div className="img_text2">
               <div className="infos">
-                <h3>Frontend Developer</h3>
-                <br />
+                <h2>Fullstack Developer</h2>
                 <p>
-                  <span>Email:</span>devendraku18956@gmail.com
+                  Email: <span>devendraku18956@gmail.com</span>
                 </p>
                 <p>
-                  <span>contact no.:</span> 7870117748
+                  contact no: <span>9608950496</span>
                 </p>
                 <p>
-                  <span>Instagram:</span>devendrapandit1715
-                </p>
-              </div>
-              <div className="name">
-                <h3>Kumari Anuradha</h3>
-              </div>
-            </div>
-            <div className="img_text3">
-              <div className="infos">
-                <h3>Fullstack Developer</h3>
-                <br />
-                <p>
-                  <span>Email:</span>devendraku18956@gmail.com
-                </p>
-                <p>
-                  <span>contact no.:</span> 9608950496
-                </p>
-                <p>
-                  <span>Instagram:</span>devendrapandit1715
+                  Instagram: <span>devendrapandit1715</span>
                 </p>
               </div>
               <div className="name">
                 <h3>Devendra kumar pandit</h3>
-              </div>
-            </div>
-            <div className="img_text4">
-              <div className="infos">
-                <h3>Frontend Developer</h3>
-                <br />
-                <p>
-                  <span>Email:</span>nandinigupta9934@gmail.com
-                </p>
-                <p>
-                  <span>contact no.:</span> 6393773006
-                </p>
-                <p>
-                  <span>Instagram:</span>nandinigupta1715
-                </p>
-              </div>
-              <div className="name">
-                <h3>Nandini Vaish</h3>
-              </div>
-            </div>
-            <div className="img_text5">
-              <div className="infos">
-                <h3>Fullstack Developer</h3>
-                <br />
-                <p>
-                  <span>Email:</span>devendraku18956@gmail.com
-                </p>
-                <p>
-                  <span>contact no.:</span> 9608950496
-                </p>
-                <p>
-                  <span>Instagram:</span>devendrapandit1715
-                </p>
-              </div>
-              <div className="name">
-                <h3>Abhijit Kumar</h3>
               </div>
             </div>
           </div>

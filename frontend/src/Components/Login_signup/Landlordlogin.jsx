@@ -15,7 +15,10 @@ export default function Landlordlogin() {
       <div className="login_container">
         <form action="" onSubmit={submitHandle}>
           <div className="col1">
-            <img src="/home.png" alt="" />
+            <img
+              src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/home.png"
+              alt=""
+            />
           </div>
           <div className="col2">
             <div className="content">
@@ -52,12 +55,12 @@ export default function Landlordlogin() {
                 </p>
               </div>
               <button id="login_div">
-                <Link to="/" id="login_btn">
-                  Login
+                <Link to="/LandlordHome" id="login_btn">
+                  Submit
                 </Link>
               </button>
               <p>
-                <Link to="/signup" id="signup_btn">
+                <Link to="/signuppage/landlordsignup" id="signup_btn">
                   Signup
                 </Link>
               </p>

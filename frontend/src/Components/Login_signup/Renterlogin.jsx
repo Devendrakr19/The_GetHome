@@ -72,7 +72,10 @@ export default function Renterlogin() {
       <div className="login_container">
         <form action="" onSubmit={submitHandle}>
           <div className="col1">
-            <img src="/home.png" alt="" />
+            <img
+              src="https://myfirstbucketrohitannie.s3.ap-south-1.amazonaws.com/home.png"
+              alt=""
+            />
           </div>
           <div className="col2">
             <div className="content">
@@ -115,7 +118,7 @@ export default function Renterlogin() {
                 </Link>
               </button>
               <p>
-                <Link to="/signup" id="signup_btn">
+                <Link to="/signuppage/rentersignup" id="signup_btn">
                   Signup
                 </Link>
               </p>

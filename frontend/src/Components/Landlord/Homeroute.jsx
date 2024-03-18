@@ -1,4 +1,4 @@
-import "../Scss/LandlordFlatDetails.scss";
+import "../Landlord/LandlordFlatDetails.scss";
 import { Link, Outlet } from "react-router-dom";
 
 function Homeroute() {

@@ -1,120 +1,125 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-}
-.search_area {
+.searchroom_container {
   position: absolute;
   width: 100%;
+  place-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(65rem, 1fr));
-}
-.search_navbar {
-  position: fixed;
-  width: 100%;
-  height: 5rem;
-  background: rgba(0, 0, 0, 0.842);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.search_location_div {
-  width: 50%;
-  height: 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.search_field {
-  width: 70%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0px 0px 8px 6px rgb(67, 67, 66);
-  border-radius: 25px;
-  border: 1px solid rgb(245, 241, 241);
-}
-#search_input {
-  width: 85%;
-  height: 3rem;
-  border: none;
-  padding: 1rem;
-  outline: none;
-  background: transparent;
-  border-radius: 25px;
-  color: white;
-  font-size: 1.5rem;
-}
-#srch_btn {
-  width: 10%;
-  border: none;
-  background: transparent;
-}
-#search_icon {
-  color: rgb(248, 246, 246);
-  font-size: 2.3rem;
-  border-radius: 15px;
-}
-#search_btn {
-  width: 25%;
-  height: 3rem;
-  box-shadow: 0px 0px 8px 6px rgb(107, 100, 100);
-  border: none;
-  border-radius: 25px;
-  font-size: 2rem;
-  background: rgb(5, 69, 101);
-  color: wheat;
-}
-#search_btn:hover {
-  cursor: pointer;
-  background: rgb(4, 146, 216);
-  color: rgb(254, 253, 251);
-}
-.choose_room_item {
-  width: 40%;
-  height: 3rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.Room_option {
-  width: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#HomeBtn {
-  width: 100%;
-  height: 2rem;
-  border: none;
-  outline: none;
-  font-size: 1.3rem;
-  background: transparent;
-  color: white;
-  box-shadow: 0px 1px 8px 6px rgb(72, 72, 72);
-  border-radius: 5px;
-}
-#link {
-  text-decoration: none;
-  color: white;
-}
-#HomeBtn:hover {
-  cursor: pointer;
-  background: rgb(6, 102, 4);
-}
+  grid-template-columns: repeat(auto-fit, minmax(75rem, 1fr));
 
-#flatBtn {
-  @extend #HomeBtn;
-}
+  .searchroom_wrapper {
+    width: 100%;
+    background: rgba(6, 67, 105, 0.292);
 
-#PgBtn {
-  @extend #HomeBtn;
-}
+    .search_area {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-#hostelBtn {
-  @extend #HomeBtn;
-}
+      .search_navbar {
+        position: fixed;
+        top: 0rem;
+        width: 100%;
+        height: 5rem;
+        background: rgb(248, 247, 247);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
 
-#LodgeBtn {
-  @extend #HomeBtn;
+        .search_location_div {
+          width: 50%;
+          height: 4rem;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .search_field {
+          width: 70%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 25px;
+          border: 1px solid rgb(195, 192, 192);
+
+          #search_input {
+            width: 85%;
+            height: 3rem;
+            border: none;
+            padding: 1rem;
+            outline: none;
+            background: transparent;
+            border-radius: 25px;
+            font-size: 1.5rem;
+          }
+          .srch_btn {
+            width: 10%;
+            height: 2rem;
+            border: none;
+            background: transparent;
+
+            #search_icon {
+              font-size: 1.5rem;
+              text-align: center;
+              margin-top: 0.2rem;
+            }
+          }
+        }
+        #search_btn {
+          width: 25%;
+          height: 3rem;
+          border: none;
+          border-radius: 25px;
+          font-size: 2rem;
+          background: rgb(5, 69, 101);
+          color: white;
+        }
+        #search_btn:hover {
+          cursor: pointer;
+          background: rgb(4, 146, 216);
+        }
+        .choose_room_item {
+          width: 40%;
+          height: 3rem;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .Room_option {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #HomeBtn {
+            width: 100%;
+            height: 2rem;
+            border: none;
+            outline: none;
+            font-size: 1.3rem;
+            background: transparent;
+            border-radius: 5px;
+          }
+          #link {
+            text-decoration: none;
+            color: black;
+          }
+          #HomeBtn:hover {
+            cursor: pointer;
+            background: rgb(9, 82, 115);
+            color: white;
+
+            #link {
+              color: white;
+            }
+          }
+
+          #flatBtn,
+          #PgBtn,
+          #hostelBtn,
+          #LodgeBtn {
+            @extend #HomeBtn;
+          }
+        }
+      }
+    }
+  }
 }

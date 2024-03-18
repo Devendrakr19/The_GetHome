@@ -1,4 +1,4 @@
-import "../Scss/LandlordFlatAddress.scss";
+import "../Landlord/LandlordFlatAddress.scss";
 
 function LandlordFlatAddress() {
   return (

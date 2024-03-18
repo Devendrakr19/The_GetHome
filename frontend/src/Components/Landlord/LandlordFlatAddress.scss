@@ -1,0 +1,97 @@
+.address-wrapper {
+  width: 100%;
+  border-top: 1px solid white;
+
+  .address-details {
+    padding: 0.2rem;
+
+    .Address-title {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      text-decoration: underline;
+    }
+
+    .Add-btn {
+      width: 10%;
+      height: 2rem;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: rgb(0, 153, 255);
+      color: white;
+    }
+    .Add-btn:hover {
+      background: rgb(212, 139, 113);
+      color: black;
+    }
+    @media (max-width: 850px) {
+      .Add-btn {
+        width: 25%;
+      }
+    }
+  }
+
+  .add-details {
+    padding: 0.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1rem;
+    // border: 1px solid red;
+
+    .input-wrapper {
+      // border: 1px solid red;
+      display: grid;
+    }
+    label {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .add-input {
+      background: transparent;
+      border: 1px solid rgb(251, 251, 251);
+      width: 100%;
+      // border: none;
+      color: white;
+      height: 2.5rem;
+      outline: none;
+      padding: 0.2rem;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+.edit-btn {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 10%;
+    height: 2rem;
+    margin-left: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(0, 162, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+  }
+  button:hover {
+    background: rgb(203, 136, 136);
+  }
+
+  @media (max-width: 580px) {
+    button {
+      width: 25%;
+    }
+  }
+}

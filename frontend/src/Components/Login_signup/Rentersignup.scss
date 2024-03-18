@@ -1,173 +1,102 @@
-.signup_container {
-  position: absolute;
+#Rentersignup_form {
   width: 100%;
-  height: 100vh;
-  background: url("");
-  // background: rgb(43, 43, 43);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.387);
+  height: 38rem;
+  border-radius: 10px;
+  color: rgb(226, 227, 230);
 
-  .form {
-    position: static;
-    padding: 0.8rem;
-    border-radius: 5px;
-    border: 1px solid rgb(252, 250, 250);
-    background: rgba(0, 0, 0, 0.67);
-    color: rgb(244, 242, 242);
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  .Rentersignup_col1 {
+    width: 55%;
 
-    .register {
+    img {
       width: 100%;
+      height: 38rem;
+      border-radius: 10px 0px 0px 10px;
     }
-    .signup_info {
-      width: 100%;
-      height: 3rem;
-      margin-top: 1rem;
+  }
+  .Rentersignup_col2 {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Rentersignup_content {
+      width: 90%;
       display: flex;
       justify-content: center;
-      text-align: center;
       align-items: center;
+      flex-direction: column;
 
-      #Info {
-        text-shadow: 3px 1px 2px red;
-      }
-    }
-    .signup_name {
-      width: 100%;
-      margin-top: 1rem;
-
-      .fullname {
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      .renter_signup_input {
-        width: 100%;
-        height: 2.2rem;
-        font-size: 1.2rem;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-        padding: 0.2rem;
+      h1 {
+        text-align: center;
         margin-top: 0.5rem;
       }
-    }
-    .signup_email {
-      @extend .signup_name;
-
-      .email {
-        @extend .fullname;
-      }
-    }
-
-    .signup_phone {
-      @extend .signup_name;
-
-      .phone {
-        @extend .fullname;
-      }
-    }
-    .signup_gender {
-      @extend .signup_name;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-      .gender {
-        width: 20%;
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-right: 0.3rem;
-      }
-      .male_div {
-        width: 20%;
+      .Rentersignup_email_div {
+        width: 100%;
+        margin-top: 0rem;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: 0.3rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 0.5rem;
 
-        .male {
-          @extend .fullname;
+        label {
+          font-size: 1.2rem;
+          font-weight: 500;
         }
-        .radio_input[type="radio"] {
-          width: 30%;
-          height: 1.2rem;
-          cursor: pointer;
-        }
-      }
-      .female_div {
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: 0.3rem;
-
-        .female {
-          @extend .fullname;
-        }
-        .radio_input[type="radio"] {
-          width: 30%;
-          height: 1.2rem;
-          cursor: pointer;
+        input {
+          width: 100%;
+          height: 2.5rem;
+          outline: none;
+          border-radius: 5px;
+          border: none;
+          margin-top: 0.5rem;
+          padding: 0.5rem;
         }
       }
-      .other_div {
-        width: 30%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
 
-        .other {
-          @extend .fullname;
-          margin-left: 0.3rem;
-        }
-        .radio_input[type="radio"] {
-          width: 30%;
-          height: 1.2rem;
-          cursor: pointer;
-        }
+      .Rentersignup_username_div {
+        @extend .Rentersignup_email_div;
       }
-    }
-    .signup_setpswd {
-      @extend .signup_name;
 
-      .setpassword {
-        @extend .fullname;
+      .Rentersignup_mobile_div {
+        @extend .Rentersignup_email_div;
       }
-    }
-    .signup_cnfrmpswd {
-      @extend .signup_name;
 
-      .cnfrmpassword {
-        @extend .fullname;
+      .Rentersignup_password_div {
+        @extend .Rentersignup_email_div;
       }
-    }
-    .signup_btn_div {
-      @extend .signup_name;
-      margin-top: 2.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-      #signup_btn {
+      .Rentersignup_div {
         width: 50%;
-        height: 3rem;
+        height: 2.5rem;
         border: none;
-        outline: none;
         border-radius: 5px;
-        background: transparent;
-        border: 1px solid white;
-        font-size: 1.5rem;
-        font-weight: 600;
+        margin-top: 1rem;
+        transition: 0.3s;
         cursor: pointer;
-        color: white;
+
+        #Rentersignup_link {
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
       }
-      #signup_btn:hover {
-        background: rgba(0, 0, 0, 0.896);
+      .Rentersignup_div:hover {
+        background: rgba(3, 88, 3, 0.75);
+
+        #Rentersignup_link {
+          color: white;
+        }
+      }
+
+      p {
+        margin-top: 0.6rem;
+
+        #Rentersignup_login_link {
+          color: blue;
+        }
       }
     }
   }
