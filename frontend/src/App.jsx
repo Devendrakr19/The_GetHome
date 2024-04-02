@@ -20,6 +20,10 @@ import Contact from "./Components/Contact";
 import Help from "./Components/Help";
 import Fileupload from "./Components/Fileupload";
 import SignupPage from "./Components/Login_signup/SignupPage";
+import RenterSendmail from "./Components/Forgotpassword/RenterSendmail";
+import RenterResetpswd from "./Components/Forgotpassword/RenterResetpswd";
+import LandlordSendmail from "./Components/Forgotpassword/LandlordSendmail";
+import LandlordResetpswd from "./Components/Forgotpassword/LandlordResetpswd";
 
 function App() {
   return (
@@ -37,6 +41,12 @@ function App() {
           <Route path="landlordlogin" element={<Landlordlogin />} />
         </Route>
         {/* //login and signup page End  ......... */}
+        {/* ................forgot password................ */}
+          <Route path="rentersendmail" element={<RenterSendmail />} />
+          <Route path="renterresetpassword" element={<RenterResetpswd />} />
+          <Route path="landlordsendmail" element={<LandlordSendmail />} />
+          <Route path="landlordresetpassword" element={<LandlordResetpswd />} />
+        
 
 
         {/* ...........Renter Home page routing ......................*/}
@@ -47,7 +57,7 @@ function App() {
           <Route path="Help" element={<Help />} />
         </Route>
         <Route path="/Searchroom" element={<Searchroom />} />
-        <Route path="/Moreinfo" element={<Moreinfo />} />
+        <Route path="/Moreinfo/:id" element={<Moreinfo />} />
 
         {/* ..........Landlord page routing........................... */}
         <Route path="/LandlordHome" element={<LandlordHome />} />

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Scss/Showroom.scss";
 import { Link } from "react-router-dom";
-import { FaStar } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa";
 import showrooms from "./RoomsApi";
 
 export default function Showroom({ showrooms }) {
@@ -18,13 +18,10 @@ export default function Showroom({ showrooms }) {
       <div className="showroom_container">
         {showrooms.map((roomsdata) => {
           const {
+            id,
             url,
-            area,
-            landmarks,
-            house_no,
-            pincode,
-            city,
-            state,
+            address,
+            roomtype,
             price,
             security,
             advancepay,
@@ -43,17 +40,17 @@ export default function Showroom({ showrooms }) {
                     <h2>
                       Location:-{" "}
                       <span>
-                        {area}
+                        {address.area}
                         {", "}
-                        {landmarks}
+                        {address.landmarks}
                         {", "}
-                        {house_no}
+                        {address.house_no}
                         {", "}
-                        {pincode}
+                        {address.pincode}
                         {", "}
-                        {city}
+                        {address.city}
                         {", "}
-                        {state}
+                        {address.state}
                       </span>
                     </h2>
                   </div>
@@ -61,6 +58,9 @@ export default function Showroom({ showrooms }) {
 
                 <div className="price_div">
                   <div className="price">
+                    <h2>
+                      Room-type:- <span>{roomtype}</span>
+                    </h2>
                     <h2>
                       Price:- <span>Rs {price}/month</span>
                     </h2>
@@ -72,7 +72,7 @@ export default function Showroom({ showrooms }) {
                     </h2>
                   </div>
                   <div className="more_info">
-                    <Link to="/Moreinfo" className="moreinfo_link">
+                    <Link to={`/Moreinfo/${id}`} className="moreinfo_link">
                       Moreinfo+
                     </Link>
                   </div>

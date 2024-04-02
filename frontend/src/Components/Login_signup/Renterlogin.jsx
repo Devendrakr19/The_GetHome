@@ -106,7 +106,7 @@ export default function Renterlogin() {
                   <label htmlFor="password">Remember me</label>
                 </div>
                 <p>
-                  <Link to="/" id="forgot_p">
+                  <Link to="/rentersendmail" id="forgot_p">
                     Forgot password?
                   </Link>
                 </p>

@@ -13,6 +13,12 @@ function About() {
               magni blanditiis. Impedit consequuntur magni saepe aliquam
               delectus maxime quaerat aspernatur voluptates, eius quis earum
               animi magnam incidunt in omnis at porro vel obcaecati.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odit
+              libero dolore modi quod distinctio eum ea ipsam veritatis impedit
+              placeat eveniet officia ex eos, ab odio suscipit pariatur aut
+              magni blanditiis. Impedit consequuntur magni saepe aliquam
+              delectus maxime quaerat aspernatur voluptates, eius quis earum
+              animi magnam incidunt in omnis at porro vel obcaecati.
             </p>
           </div>
         </div>

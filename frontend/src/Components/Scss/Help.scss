@@ -4,7 +4,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  
+  background: rgba(6, 67, 105, 0.694);
+
   .Help {
     margin-top: 6rem;
     display: flex;
@@ -27,8 +28,10 @@
 
     .team {
       padding: 0.5rem;
-      box-shadow: 0px 0px 3px 0px ;
+      box-shadow: 0px 0px 3px 0px;
       width: 100%;
+      background: rgba(0, 0, 0, 0.466);
+      border-radius: 5px;
 
       .team_members {
         text-align: center;
@@ -50,6 +53,8 @@
     }
     .write_email {
       box-shadow: 0px 0px 3px 0px;
+      background: rgba(0, 0, 0, 0.466);
+      border-radius: 5px;
 
       .text_email {
         padding: 0.5rem;
@@ -77,7 +82,7 @@
           color: white;
           border: 1px solid white;
           font-weight: 600;
-
+          margin-top: 0.2rem;
         }
         #send_message {
           width: 30%;

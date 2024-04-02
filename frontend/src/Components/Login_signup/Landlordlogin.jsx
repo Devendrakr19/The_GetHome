@@ -49,7 +49,7 @@ export default function Landlordlogin() {
                   <label htmlFor="password">Remember me</label>
                 </div>
                 <p>
-                  <Link to="/" id="forgot_p">
+                  <Link to="/landlordsendmail" id="forgot_p">
                     Forgot password?
                   </Link>
                 </p>

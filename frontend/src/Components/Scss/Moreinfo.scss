@@ -6,7 +6,7 @@
   background-size: cover;
 
   .view_container {
-    background: rgb(50, 66, 80);
+    background: rgb(189, 233, 255);
     width: 100%;
     padding: 0.5rem;
     display: grid;
@@ -14,14 +14,20 @@
     gap: 1rem;
 
     .img_and_features1 {
+      // border: 1px solid rgb(0, 42, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
       .img_area {
         width: 100%;
-        border-radius: 1px;
-        padding: 0.5rem;
-        height: 30rem;
-        background: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
+
+        img {
+          width: 100%;
+          height: 35rem;
+          object-fit: cover;
+        }
       }
       .toggle {
         display: flex;
@@ -45,6 +51,8 @@
         }
       }
       .book_btndiv {
+        width: 100%;
+        // border: 1px solid red;
         margin-top: 2rem;
 
         @extend .toggle;
@@ -57,10 +65,12 @@
           border-radius: 10px;
           font-size: 1.1rem;
           font-weight: 600;
-
+          background: rgba(5, 155, 169, 0.777);
+          transition: 0.4s;
+          margin-bottom: 1rem;
         }
         .book_now:hover {
-          background: rgba(5, 155, 169, 0.777);
+          background: rgba(0, 0, 0, 0.977);
           color: white;
           cursor: pointer;
         }
@@ -69,12 +79,19 @@
 
     .img_and_features2 {
       padding: 0.5rem;
+      // border: 1px solid red;
 
       .address_info {
         padding: 0.5rem;
 
         h3 {
-          color: cyan;
+          color: rgb(9, 128, 213);
+          font-size: 2rem;
+
+          span {
+            font-size: 1.7rem;
+            color: black;
+          }
         }
       }
       .price_infodiv {
@@ -83,18 +100,25 @@
 
         .price_info {
           padding: 0.5rem;
+          // border: 1px solid red;
 
           label {
-            font-size: 1.2rem;
-            color: cyan;
+            // border: 1px solid red;
+            font-size: 1.5rem;
+            color: rgb(9, 128, 213);
+            font-weight: 550;
+          }
+          span {
+            font-size: 1.5rem;
+            color: black;
           }
         }
       }
     }
   }
 }
-@media (min-width: 606px) {
-  .M_container {
-    height: 100vh;
-  }
-}
+// @media (min-width: 606px) {
+//   .M_container {
+//     height: 100vh;
+//   }
+// }

@@ -22,38 +22,42 @@ export default function Loginpage() {
   return (
     <>
       <div className="login_body ">
-        <div className="link_div">
-          <button
-            style={{
-              background:
-                activeButton === "renterlogin" ? "rgb(4, 150, 200)" : "black",
-            }}
-          >
-            <Link
-              to=""
-              id="renterlogin"
-              onClick={() => handleButtonClick("renterlogin")}
+        <div className="loginPage_wrapper">
+          <div className="link_div">
+            <button
+              style={{
+                background:
+                  activeButton === "renterlogin" ? "rgb(4, 150, 200)" : "black",
+              }}
             >
-              Renter
-            </Link>
-          </button>
-          <button
-            style={{
-              background:
-                activeButton === "landlordlogin" ? "rgb(4, 150, 200)" : "black",
-            }}
-          >
-            <Link
-              to="landlordlogin"
-              id="landlordlogin"
-              onClick={() => handleButtonClick("landlordlogin")}
+              <Link
+                to=""
+                id="renterlogin"
+                onClick={() => handleButtonClick("renterlogin")}
+              >
+                Renter
+              </Link>
+            </button>
+            <button
+              style={{
+                background:
+                  activeButton === "landlordlogin"
+                    ? "rgb(4, 150, 200)"
+                    : "black",
+              }}
             >
-              Landlord
-            </Link>
-          </button>
-        </div>
-        <div className="outlet">
-          <Outlet />
+              <Link
+                to="landlordlogin"
+                id="landlordlogin"
+                onClick={() => handleButtonClick("landlordlogin")}
+              >
+                Landlord
+              </Link>
+            </button>
+          </div>
+          <div className="outlet">
+            <Outlet />
+          </div>
         </div>
       </div>
     </>
